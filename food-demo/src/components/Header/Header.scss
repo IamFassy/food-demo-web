@@ -1,0 +1,33 @@
+@import "styles/_variables";
+
+.header-container {
+    box-shadow: 0 8px 10px -10px rgba(0, 0, 0, .08);
+    position: fixed;
+    height: 75px;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    z-index: 50;
+    padding: 0 20px;
+    display: flex;
+    color: $text-color;
+    width: 100%;
+    align-items: center;
+
+    &__link {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+
+        &-title {
+            margin-left: 10%;
+            font-weight: 600;
+        }
+
+        &-title:hover {
+            color: $primary-color;
+        }
+    }
+
+}
