@@ -1,0 +1,94 @@
+@import "styles/_variables";
+
+
+.product-item {
+    width: 300px;
+    height: auto;
+    padding: 5px 0;
+
+    &-container {
+        margin: 5px auto;
+        width: 250px;
+
+        &__top {
+
+
+
+            >img {
+                width: 250px;
+                height: 250px;
+                border-radius: 10px;
+            }
+
+            &-stock {
+                background-color: #ffffff;
+                color: $primary-color;
+                position: absolute;
+                top: 20;
+                margin-top: 20px;
+                z-index: 50;
+                font-weight: 500;
+                padding: 10px;
+            }
+
+            &-inactive {
+                display: flex;
+                flex-direction: row;
+
+                >img {
+                    width: 250px;
+                    height: 250px;
+                    border-radius: 10px;
+                    opacity: 0.5;
+                }
+            }
+        }
+
+        &__bottom {
+            >span {
+                text-align: left;
+            }
+
+            &-button {
+                background-color: #ffffff;
+                border: 2px solid $primary-color;
+                border-radius: 5px;
+                width: 70%;
+                padding: 5px 0;
+
+                align-items: center;
+                display: flex;
+                justify-content: center;
+
+                &-count {
+                    background-color: transparent;
+                    border: none;
+                    color: $primary-color;
+                    font-weight: 700;
+                    outline: none;
+                }
+
+                &-count :hover {
+                    text-decoration: none;
+                }
+            }
+
+
+
+
+
+
+            &-notify {
+                color: $primary-color;
+                font-weight: 700;
+                text-align: right;
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+.product-item:hover {
+    background-color: #E1E1E1;
+    cursor: pointer;
+}

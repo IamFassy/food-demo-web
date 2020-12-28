@@ -2,4 +2,17 @@
 
 .product-container {
     margin-top: 10%;
+
+    &__sub {
+
+
+        >h2 {
+            text-transform: uppercase;
+            color: $text-color;
+        }
+
+        &-row {
+            padding-left: 20px;
+        }
+    }
 }
